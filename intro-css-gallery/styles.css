@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    background-color: rgb(250, 250, 110);
+    padding: 20px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: #eee;
+    padding:50px
+}
+section{
+    background-color: white;
+        border:solid 1px #ccc
+     transition: all 0.5s;
+
+}
+img{
+    width:100%
+}
+section p{
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+section:hover{
+     background-color:hotpink
+}
+
+@media screen and (max-width: 600px){
+    /*When the screen is less than 600px, hotpink that header*/
+    header{
+    background-color: hotpink;
+}
+    main {
+    grid-template-columns: 1fr;
+
+}
+}
+    
+/* Your code here */
