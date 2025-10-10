@@ -15,7 +15,7 @@ main {
 }
 section{
     background-color: white;
-        border:solid 1px #ccc
+        border:solid 1px #ccc;
      transition: all 0.5s;
 
 }
@@ -28,7 +28,8 @@ section p{
 }
 
 section:hover{
-     background-color:hotpink
+     background-color:hotpink;
+     transform: rotate(5deg);
 }
 
 @media screen and (max-width: 600px){
