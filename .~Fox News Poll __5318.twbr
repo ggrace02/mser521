@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Average Data (Fox News Data)' inline='true' name='federated.1fa7dtb0krepr41fawm7v1hr37wn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Fox News Data' name='excel-direct.1nae3of0eqcmgi1ggbjpr1q7f3xy'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/gillian/Downloads/Fox News Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1nae3of0eqcmgi1ggbjpr1q7f3xy' name='Average Data' table='[&apos;Average Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+            <column datatype='string' name='Party' ordinal='0' />
+            <column datatype='real' name='Approval Percentage' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Average Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B5:no:A1:B5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Party</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Party]</local-name>
+            <parent-name>[Average Data]</parent-name>
+            <remote-alias>Party</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Average Data_2C677301A82B40358AE678FE4CE45431]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Approval Percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Approval Percentage]</local-name>
+            <parent-name>[Average Data]</parent-name>
+            <remote-alias>Approval Percentage</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Average Data_2C677301A82B40358AE678FE4CE45431]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+      <column caption='Average Data' datatype='table' name='[__tableau_internal_object_id__].[Average Data_2C677301A82B40358AE678FE4CE45431]' role='measure' type='quantitative' />
+      <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/15/wvycm7kd3yl5lvvwbh90ph1c0000gn/T/tableau-temp/#TableauTemp_1ju3lun0xcgaih10v2t3g0q9r2i7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2025 03:26:11 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Party</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Party]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Party</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Average Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Average Data_2C677301A82B40358AE678FE4CE45431]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Approval Percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Approval Percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Approval Percentage</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Average Data</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Average Data_2C677301A82B40358AE678FE4CE45431]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Party:nk]' type='palette'>
+            <map to='#00a2b3'>
+              <bucket>&quot;Democrat&quot;</bucket>
+            </map>
+            <map to='#8fb202'>
+              <bucket>&quot;Independent&quot;</bucket>
+            </map>
+            <map to='#cf3e53'>
+              <bucket>&quot;Republican&quot;</bucket>
+            </map>
+            <map to='#f3a546'>
+              <bucket>&quot;Overall&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Average Data' id='Average Data_2C677301A82B40358AE678FE4CE45431'>
+            <properties context=''>
+              <relation connection='excel-direct.1nae3of0eqcmgi1ggbjpr1q7f3xy' name='Average Data' table='[&apos;Average Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:B5:no:A1:B5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Party' ordinal='0' />
+                  <column datatype='real' name='Approval Percentage' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bar Chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Average Data (Fox News Data)' name='federated.1fa7dtb0krepr41fawm7v1hr37wn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fa7dtb0krepr41fawm7v1hr37wn'>
+            <column datatype='real' name='[Approval Percentage]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+            <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Sum' name='[sum:Approval Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fa7dtb0krepr41fawm7v1hr37wn].[sum:Approval Percentage:qk]</rows>
+        <cols>[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]</cols>
+      </table>
+      <simple-id uuid='{1343DE79-C839-4BF5-AB2F-A5F20537A2BF}' />
+    </worksheet>
+    <worksheet name='Bubbles'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Average Data (Fox News Data)' name='federated.1fa7dtb0krepr41fawm7v1hr37wn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fa7dtb0krepr41fawm7v1hr37wn'>
+            <column datatype='real' name='[Approval Percentage]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Avg' name='[avg:Approval Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Sum' name='[sum:Approval Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' />
+              <text column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' />
+              <color column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' />
+              <text column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[sum:Approval Percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{322F9F35-D34B-4416-9F95-421C4812A54B}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Table of Percentage of Approval by Political Party</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Average Data (Fox News Data)' name='federated.1fa7dtb0krepr41fawm7v1hr37wn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fa7dtb0krepr41fawm7v1hr37wn'>
+            <column datatype='real' name='[Approval Percentage]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Avg' name='[avg:Approval Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' />
+              <text column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{B467736E-ED77-450E-BB37-D4EB238D7789}' />
+    </worksheet>
+    <worksheet name='Treemap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Percentage of Approval by Party</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Average Data (Fox News Data)' name='federated.1fa7dtb0krepr41fawm7v1hr37wn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fa7dtb0krepr41fawm7v1hr37wn'>
+            <column datatype='real' name='[Approval Percentage]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Party]' role='dimension' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Avg' name='[avg:Approval Percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Party]' derivation='None' name='[none:Party:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Approval Percentage]' derivation='Sum' name='[sum:Approval Percentage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' value='N' />
+            <format attr='font-family' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' value='12' />
+            <format attr='font-size' data-class='subtotal' value='10' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' value='9' />
+            <format attr='font-family' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' value='Tableau Bold' />
+            <format attr='font-family' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' value='11' />
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Light' />
+            <format attr='font-size' scope='rows' value='11' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[sum:Approval Percentage:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#efe0e0</color>
+                <color>#edd0d1</color>
+                <color>#ecc0c1</color>
+                <color>#eab1b1</color>
+                <color>#e9a1a2</color>
+                <color>#e79293</color>
+                <color>#e58384</color>
+                <color>#e47475</color>
+                <color>#e26567</color>
+                <color>#e15759</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#efe0e0</color>
+                <color>#edd0d1</color>
+                <color>#ecc0c1</color>
+                <color>#eab1b1</color>
+                <color>#e9a1a2</color>
+                <color>#e79293</color>
+                <color>#e58384</color>
+                <color>#e47475</color>
+                <color>#e26567</color>
+                <color>#e15759</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='11' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-size' value='16' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[sum:Approval Percentage:qk]' />
+              <text column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' />
+              <lod column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[sum:Approval Percentage:qk]' />
+              <text column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' />
+              <color column='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BBF209A7-85D5-4ADD-B1EC-D4E175971294}' />
+    </worksheet>
+  </worksheets>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' maximized='true' name='Treemap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81AA2FBA-BE37-45A7-BC8A-574231CDA1EC}' />
+    </window>
+    <window class='worksheet' name='Bar Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{271C7EDE-1819-4703-973D-992DF1A0DA4D}' />
+    </window>
+    <window class='worksheet' name='Bubbles'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[none:Party:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{C17428B2-608E-40A4-87F5-D3F937132565}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fa7dtb0krepr41fawm7v1hr37wn].[avg:Approval Percentage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{30B47250-6EA0-48FB-B2E2-BA19B6F8E717}' />
+    </window>
+  </windows>
+</workbook>

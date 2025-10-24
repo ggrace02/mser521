@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(193, 236, 158);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    border: 2px solid gray;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 237);
+}
+h2{
+    color: black;
+}
+p{
+    color: rgb(99, 97, 97);
+}
+span{
+    color: rgb(99, 97, 97);
+}
