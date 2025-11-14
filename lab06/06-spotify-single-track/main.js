@@ -8,5 +8,13 @@ async function showTrack() {
   const track = await response.json();
   console.log(track);
 
+containerEl.innerHTML = `<section class= "track">
+<img src="${track.album.image_url}">
+<p>${track.artist.name}</p>
+<p>Album: ${track.album.name}</p>
+<h2> ${track.name}</h2>
+
+ ${track.name} </section>`;
+
   // TODO: Display the track information to the screen
 }

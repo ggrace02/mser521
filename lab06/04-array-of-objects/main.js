@@ -13,19 +13,32 @@ const fruits = [
 ];
 
 // 1. Print the first number in the list to the console.
-console.log('1. Print the first fruit name to the console.');
+console.log(fruits[0].name);
 
 // 2. Print the second number in the list to the console.
-console.log('2. Print the second fruit emoji to the console.');
+console.log(fruits[1].name);
 
 // 3. Print the third number in the list to the console.
-console.log('3. Print the third fruit count to the console.');
+console.log(fruits[2].name);
 
 // 4. Print the last number in the list to the console.
-console.log('4. Print the last fruit count to the console.');
+console.log(fruits[9-1].name);
 
 // 5. Using a "for...of loop", print each number to the console.
-console.log('5. Using a "for...of loop", print each fruit color swatch and name.');
-
+console.log();
+for(const fruit of fruits){
+  console.log(fruit.color, fruit.name)
+}
 // 6. Using a "for...of loop", display the name, emoji and count of each fruit
 //    in a div tag within the element that has an id of "container".`
+
+// 1. target the container you want to modify
+// 2. visit each fruit object in the list 
+const container = document.querySelector("#container");
+for(const fruit of fruits){
+  console.log(fruit.name, fruit.emoji, fruit.count)
+  container.innerHTML+= `<p>${fruit.emoji} ${fruit.name} ${fruit.count} 
+
+  </p>`;
+
+}

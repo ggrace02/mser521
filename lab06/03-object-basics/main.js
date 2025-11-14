@@ -38,9 +38,12 @@ console.log(track.album.image_url);
 // Album cover image using the <img> tag
  
 const template =`
+<div class="track-card">
 <img src="${track.album.image_url}">
-<h3>${track.artist.name}</h3>
-<p> ${track.name}</p>
+<p>${track.artist.name}</p>
+<p>Album: ${track.album.name}</p>
+<h2> ${track.name}</h2>
+</div>
 `;
 const container = document.querySelector("#container");
 container.innerHTML = template;
